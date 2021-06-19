@@ -1,0 +1,26 @@
+apply plugin: 'java-library'
+apply plugin: 'kotlin'
+apply plugin: 'groovy'
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.0.0"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.72"
+    }
+}
+
+repositories {
+    google()
+    jcenter()
+}
+
+dependencies {
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation "com.android.tools.build:gradle:4.0.0"
+    implementation gradleApi()
+    implementation localGroovy()
+}
